@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-navy-950: #102c3a;
+  --color-navy-800: #173f50;
+  --color-teal-700: #087f75;
+  --color-teal-600: #0d9488;
+  --color-teal-100: #ccfbf1;
+  --color-cream: #f7f6f1;
+  --color-amber-action: #f59e0b;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #f7f6f1; color: #102c3a; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { touch-action: manipulation; }
+:focus-visible { outline: 3px solid #14b8a6; outline-offset: 3px; }
+
+.soft-shadow { box-shadow: 0 20px 60px rgba(16, 44, 58, .10); }
+.fine-grid { background-image: radial-gradient(rgba(16, 44, 58, .11) 1px, transparent 1px); background-size: 20px 20px; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; }
+
+@keyframes pulse-soft { 0%,100% { opacity: .45 } 50% { opacity: 1 } }
+.skeleton { background: linear-gradient(90deg,#e8eceb 25%,#f7f8f7 45%,#e8eceb 65%); background-size: 300% 100%; animation: shimmer 1.2s infinite; }
+@keyframes shimmer { from { background-position: 100% 0 } to { background-position: 0 0 } }

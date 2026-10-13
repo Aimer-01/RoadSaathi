@@ -1,0 +1,48 @@
+export type Language = "en" | "hi";
+
+export const translations = {
+  en: {
+    brand: "RoadSaathi",
+    tagline: "Fast, trusted help on every journey.",
+    hero: "When the road stops you, help should not.",
+    heroBody: "Nearby roadside support for petrol, diesel, CNG, hybrid and electric vehicles across our Pune pilot zone.",
+    getHelp: "Get Help Now",
+    track: "Track Request",
+    partner: "Become a Partner",
+    how: "How it works",
+    services: "Services",
+    safety: "Safety & Trust",
+    fleet: "Fleet & Business",
+    about: "About",
+    contact: "Contact",
+    login: "Log in",
+    pilot: "Pilot service area",
+    requestHelp: "Request help",
+    viewAll: "View all services",
+    safeNote: "Stay in a safe spot. We're finding someone near you.",
+    demo: "Demo data",
+  },
+  hi: {
+    brand: "रोडसाथी",
+    tagline: "हर सफर में तेज़, भरोसेमंद मदद।",
+    hero: "जब रास्ता आपको रोके, मदद नहीं रुकनी चाहिए।",
+    heroBody: "हमारे पुणे पायलट क्षेत्र में पेट्रोल, डीज़ल, CNG, हाइब्रिड और इलेक्ट्रिक वाहनों के लिए नज़दीकी रोडसाइड सहायता।",
+    getHelp: "अभी मदद लें",
+    track: "रिक्वेस्ट ट्रैक करें",
+    partner: "पार्टनर बनें",
+    how: "यह कैसे काम करता है",
+    services: "सेवाएं",
+    safety: "सुरक्षा और भरोसा",
+    fleet: "फ्लीट और बिज़नेस",
+    about: "हमारे बारे में",
+    contact: "संपर्क",
+    login: "लॉग इन",
+    pilot: "पायलट सेवा क्षेत्र",
+    requestHelp: "मदद मांगें",
+    viewAll: "सभी सेवाएं देखें",
+    safeNote: "सुरक्षित जगह पर रहें। हम आपके पास मदद ढूंढ रहे हैं।",
+    demo: "डेमो डेटा",
+  },
+} as const;
+
+export type TranslationKey = keyof typeof translations.en;
